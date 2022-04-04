@@ -51,4 +51,5 @@ The server will be populated with a database of 1000 people’s odor measurement
 *We will update this section based on the questions we receive. Please find our contact details below.*
 
 ## Contacts
+This competition is organized by the CYS group of Delft University of Technology.
 Please feel free to contact us at cyscompetition@tudelft.nl with questions regarding this competition.
