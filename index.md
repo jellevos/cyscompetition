@@ -1,37 +1,54 @@
-## Welcome to GitHub Pages
+In collaboration with WIFS, TU Delft CYS is organizing a competition in the domain of signal processing, combining biometrics and secure computation. Specifically, competitors are tasked to create a private odor-based access control system that matches encrypted human samples with permitted encrypted samples on an external database. The sensitive nature of the biometric samples requires them to be encrypted both at rest and in transit. At the same time, to prevent long waiting times, the access control mechanism is supposed to answer queries within only a second.
 
-You can use the [editor on GitHub](https://github.com/jellevos/cyscompetition/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+[Register here!]()
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Story
+For years now, company A has used a very traditional form of access control: They had dogs sniff each passerby, barking if the dog recognized them. This worked great when the company had 10 employees, but things became harder for a 100; while the dogs certainly enjoyed the increased attention, they certainly took longer to bark. Now, the company has reached 1000 employees, and the dogs are having a hard time keeping track of all the different odors. So, in 2022, this company is going high-tech! E-noses replace the dogs, who from now on get to take pets for free.
 
-### Markdown
+The access control system based on e-noses is provided by company B, which also serves many other clients. Since they are storing a significant amount of sensitive biometric data, they promise that all data, both at rest and in transit, is encrypted.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Data
+For this competition, all data is artificially generated to resemble human odors measured using [gas chromatography-mass spectrometry](https://en.wikipedia.org/wiki/Gas_chromatography%E2%80%93mass_spectrometry). Note that **we do not offer any guarantees about how realistic these samples are**, although we certainly try to.
+> We will add more details about the data that is given to the participants at a later time.
 
-```markdown
-Syntax highlighted code block
+## Objective
+The primary objective is to **maximize** the area-under-curve of the receiver operating curve (**ROC-AUC**) of the binary classification (access denied / access granted). This is the metric we use to decide the winners. In the case of a tie (up to 3 places behind the comma), we look at the run time. There are several constraints:
 
-# Header 1
-## Header 2
-### Header 3
+- The total run time for a query must take less than one second, otherwise, it is counted as incorrect. *We set a specific bandwidth so you can calculate the time it costs to transmit.*
+- The server must not be able to learn any information from the input it receives. *In other words, the input to the server must be computationally indistinguishable from any other input.*
+- Each e-nose has a distinct key, with which all its queries are encrypted. *In other words, an e-nose cannot decrypt another e-nose’s images.*
+- Each query has only one interaction: The e-nose queries the server, and the server sends one response.
 
-- Bulleted
-- List
+The server is expected to return a value that the client will interpret as ‘true’ if it is above a certain threshold, and ‘false’ if it is below. To compute the ROC-AUC we will vary this threshold so whether these values lie between 0-1 or any other range is not important.
 
-1. Numbered
-2. List
+## Evaluation
 
-**Bold** and _Italic_ and `Code` text
+The server will be populated with a database of 1000 people’s odor measurements. During the evaluation, each one of the three e-noses will send 500 queries of faces to the server. All solutions will be evaluated on the same data.
 
-[Link](url) and ![Image](src)
-```
+## Baseline solution
+> We will provide a baseline solution based on PCA and a simple homomorphic circuit.
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+## Prizes
+1st place: 500 euros
 
-### Jekyll Themes
+2nd place: 250 euros
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jellevos/cyscompetition/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+3rd place: 125 euros
 
-### Support or Contact
+> Prizes are not yet final.
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## Timeline
+1st of July: Kickoff
+
+1st of October: Deadline
+
+> We will provide more details later.
+
+## Submitting
+> We will include details on the submission format, deadlines and a submitting form at a later time.
+
+## Frequently-asked questions
+*We will update this section based on the questions we receive. Please find our contact details below.*
+
+## Contacts
+Please feel free to contact us at cyscompetition@tudelft.nl with questions regarding this competition.
