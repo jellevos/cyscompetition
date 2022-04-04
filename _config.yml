@@ -1,3 +1,6 @@
 title: CYS Secure Biometrics Competition 2022
 tagline: Open the door to encrypted access control
+description: Open the door to encrypted access control
 theme: jekyll-theme-cayman
+github:
+  is_project_page: false
