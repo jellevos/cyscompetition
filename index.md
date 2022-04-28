@@ -23,7 +23,7 @@ The server is expected to return a value that the client will interpret as ‘tr
 
 ## Evaluation
 
-The server will be populated with a database of 1000 people’s odor measurements. During the evaluation, each one of the three e-noses will send 500 queries of faces to the server. All solutions will be evaluated on the same data.
+The server will be populated with a database of 1000 people’s odor measurements. During the evaluation, each one of the three e-noses will send 500 queries of _encrypted_ odor measurements to the server. All solutions will be evaluated on the same data.
 
 ## Baseline solution
 > We will provide a baseline solution based on PCA and a simple homomorphic circuit.
