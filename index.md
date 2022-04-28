@@ -1,4 +1,4 @@
-In collaboration with WIFS, TU Delft CYS is organizing a competition in the domain of signal processing, combining biometrics and secure computation. Specifically, competitors are tasked to create a private odor-based access control system that matches encrypted human samples with permitted encrypted samples on an external database. The sensitive nature of the biometric samples requires them to be encrypted both at rest and in transit. At the same time, to prevent long waiting times, the access control mechanism is supposed to answer queries within only a second.
+In collaboration with WIFS, TU Delft CYS is organizing a competition in the domain of signal processing, combining biometrics and secure computation. Specifically, competitors are tasked to create a **private odor-based access control system** that matches encrypted human samples with permitted encrypted samples on an external database. The sensitive nature of the biometric samples requires them to be encrypted both at rest and in transit. At the same time, to prevent long waiting times, the access control mechanism is supposed to answer queries within only a second.
 
 [Register here!]()
 
@@ -8,7 +8,7 @@ For years now, company A has used a very traditional form of access control: The
 The access control system based on e-noses is provided by company B, which also serves many other clients. Since they are storing a significant amount of sensitive biometric data, they promise that all data, both at rest and in transit, is encrypted.
 
 ## Data
-For this competition, all data is artificially generated to resemble human odors measured using [gas chromatography-mass spectrometry](https://en.wikipedia.org/wiki/Gas_chromatography%E2%80%93mass_spectrometry). Note that **we do not offer any guarantees about how realistic these samples are**, although we certainly try to.
+For this competition, all data is artificially generated to resemble 'human' odors measured using [gas chromatography](https://en.wikipedia.org/wiki/Gas_chromatography). Note that **we do not offer any guarantees about how realistic these samples are**, although we certainly try to.
 > We will add more details about the data that is given to the participants at a later time.
 
 ## Objective
