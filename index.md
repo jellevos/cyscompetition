@@ -46,7 +46,7 @@ It was not an option for us to generate a new real-life dataset, so we had to re
 **Will the winning teams have their work published?**  
 The competition ends after the submission deadline for WIFS, but we encourage (and will work together with) the winning teams to summarize their work in a submission to [IEEE T-IFS](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10206).
 
-**Can our institution register multiple teams?**
+**Can our institution register multiple teams?**  
 Yes! The only rule we enforce here is that each person only takes part in one team.
 
 ## Contacts
