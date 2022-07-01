@@ -40,13 +40,12 @@ For this competition, all data is artificially generated to resemble 'human' odo
 > We will include details on the submission format, deadlines and a submitting form at a later time.
 
 ## Frequently-asked questions
-*We will update this section based on the questions we receive. Please find our contact details below.*
-**Why are you targeting odors as a biometric?**
+**Why are you targeting odors as a biometric?**  
 It was not an option for us to generate a new real-life dataset, so we had to resort to generating artificial data. For biometrics like fingerprints, faces, and iris scans, there are public generators available. To level the playing field we decided to create a new data generation pipeline for another biometric, and to keep it hidden until the results are announced.
 
-**Will the winning teams have their work published?**
+**Will the winning teams have their work published?**  
 The competition ends after the submission deadline for WIFS, but we encourage (and will work together with) the winning teams to summarize their work in a submission to [T-IFS](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10206).
 
 ## Contacts
 This competition is organized by the CYS group of Delft University of Technology.
-Please feel free to contact us at cyscompetition@tudelft.nl with questions regarding this competition.
+Please feel free to contact us at [cyscompetition@tudelft.nl](mailto:cyscompetition@tudelft.nl) with questions regarding this competition.
