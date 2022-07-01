@@ -1,4 +1,4 @@
-In collaboration with WIFS, TU Delft CYS is organizing a competition in the domain of signal processing, combining biometrics and secure computation. Specifically, competitors are tasked to create a **private odor-based access control system** that matches encrypted human samples with permitted encrypted samples on an external database. The sensitive nature of the biometric samples requires them to be encrypted both at rest and in transit. At the same time, to prevent long waiting times, the access control mechanism is supposed to answer queries within only a second.
+In collaboration with [WIFS](https://wifs2022.utt.fr/), TU Delft CYS is organizing a competition in the domain of signal processing, combining biometrics and secure computation. Specifically, competitors are tasked to create a **private odor-based access control system** that matches encrypted human samples with permitted encrypted samples on an external database. The sensitive nature of the biometric samples requires them to be encrypted both at rest and in transit. At the same time, to prevent long waiting times, the access control mechanism is supposed to answer queries within only a second.
 
 [Register here!](https://forms.office.com/Pages/ResponsePage.aspx?id=TVJuCSlpMECM04q0LeCIezoA7-5OJkxKgUWsouHTGZtUNzJJNlVCQ1VHNVA0UU9FQVJDSUgwU0xRSy4u)
 
@@ -20,12 +20,9 @@ The server is expected to return a value that the client will interpret as ‘tr
 ## Evaluation
 The server will be populated with a database of 1000 people’s odor measurements. During the evaluation, each one of the three e-noses will send 500 queries of _encrypted_ odor measurements and their _supposed_ user id to the server. All solutions will be evaluated on the same data.
 
-## Data & baseline
+## Data & baseline solution
 For this competition, all data is artificially generated to resemble 'human' odors measured using [gas chromatography](https://en.wikipedia.org/wiki/Gas_chromatography). Note that **we do not offer any guarantees about how realistic these samples are**, although we certainly try to.
 > We will add the data & a baseline for participants on the 8th of July.
-
-## Baseline solution
-> We will provide a baseline solution based on PCA and a simple homomorphic circuit.
 
 ## Prizes
 1st place: 500 euros  
@@ -34,9 +31,10 @@ For this competition, all data is artificially generated to resemble 'human' odo
 
 ## Timeline
 **1st of July:** Kickoff!  
-**8th of July:** Data online  
-**1st of September:** Submission system opens  
-**1st of October:** Deadline  
+**8th of July:** Data & baseline online.  
+**1st of September:** Submission system opens.  
+**1st of October:** Submission deadline & [early registration deadline for WIFS](https://wifs2022.utt.fr/registration).  
+**12th-16th of December:** Results announced at WIFS.  
 
 ## Submitting
 > We will include details on the submission format, deadlines and a submitting form at a later time.
@@ -45,6 +43,9 @@ For this competition, all data is artificially generated to resemble 'human' odo
 *We will update this section based on the questions we receive. Please find our contact details below.*
 **Why are you targeting odors as a biometric?**
 It was not an option for us to generate a new real-life dataset, so we had to resort to generating artificial data. For biometrics like fingerprints, faces, and iris scans, there are public generators available. To level the playing field we decided to create a new data generation pipeline for another biometric, and to keep it hidden until the results are announced.
+
+**Will the winning teams have their work published?**
+The competition ends after the submission deadline for WIFS, but we encourage (and will work together with) the winning teams to summarize their work in a submission to [T-IFS](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10206).
 
 ## Contacts
 This competition is organized by the CYS group of Delft University of Technology.
