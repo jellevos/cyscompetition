@@ -28,15 +28,15 @@ For this competition, all data is artificially generated to resemble 'human' odo
 > We will provide a baseline solution based on PCA and a simple homomorphic circuit.
 
 ## Prizes
-1st place: 500 euros
-2nd place: 250 euros
-3rd place: 125 euros
+1st place: 500 euros  
+2nd place: 250 euros  
+3rd place: 125 euros  
 
 ## Timeline
-**1st of July:** Kickoff!
-**8th of July:** Data online
-**1st of September:** Submission system opens
-**1st of October:** Deadline
+**1st of July:** Kickoff!  
+**8th of July:** Data online  
+**1st of September:** Submission system opens  
+**1st of October:** Deadline  
 
 ## Submitting
 > We will include details on the submission format, deadlines and a submitting form at a later time.
