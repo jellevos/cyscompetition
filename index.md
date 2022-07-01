@@ -7,10 +7,6 @@ For years now, company A has used a very traditional form of access control: The
 
 The access control system based on e-noses is provided by company B, which also serves many other clients. Since they are storing a significant amount of sensitive biometric data, they promise that all data, both at rest and in transit, is encrypted.
 
-## Data
-For this competition, all data is artificially generated to resemble 'human' odors measured using [gas chromatography](https://en.wikipedia.org/wiki/Gas_chromatography). Note that **we do not offer any guarantees about how realistic these samples are**, although we certainly try to.
-> We will add more details about the data that is given to the participants at a later time.
-
 ## Objective
 The primary objective is to **maximize** the area-under-curve of the receiver operating curve (**ROC-AUC**) of the binary classification (access denied / access granted). This is the metric we use to decide the winners. In the case of a tie (up to 3 places behind the comma), we look at the run time. There are several constraints:
 
@@ -22,8 +18,11 @@ The primary objective is to **maximize** the area-under-curve of the receiver op
 The server is expected to return a value that the client will interpret as ‘true’ if it is above a certain threshold, and ‘false’ if it is below. To compute the ROC-AUC we will vary this threshold so whether these values lie between 0-1 or any other range is not important.
 
 ## Evaluation
+The server will be populated with a database of 1000 people’s odor measurements. During the evaluation, each one of the three e-noses will send 500 queries of _encrypted_ odor measurements and their _supposed_ user id to the server. All solutions will be evaluated on the same data.
 
-The server will be populated with a database of 1000 people’s odor measurements. During the evaluation, each one of the three e-noses will send 500 queries of _encrypted_ odor measurements to the server. All solutions will be evaluated on the same data.
+## Data
+For this competition, all data is artificially generated to resemble 'human' odors measured using [gas chromatography](https://en.wikipedia.org/wiki/Gas_chromatography). Note that **we do not offer any guarantees about how realistic these samples are**, although we certainly try to.
+> We will add more details about the data that is given to the participants at a later time.
 
 ## Baseline solution
 > We will provide a baseline solution based on PCA and a simple homomorphic circuit.
@@ -38,9 +37,9 @@ The server will be populated with a database of 1000 people’s odor measurement
 > Prizes are not yet final.
 
 ## Timeline
-1st of July: Kickoff
-
-1st of October: Deadline
+**1st of July:** Kickoff!
+**8th of July:** Data online
+**1st of October:** Deadline
 
 > We will provide more details later.
 
@@ -49,6 +48,8 @@ The server will be populated with a database of 1000 people’s odor measurement
 
 ## Frequently-asked questions
 *We will update this section based on the questions we receive. Please find our contact details below.*
+**Why are you targeting odors as a biometric?**
+It was not an option for us to generate a new real-life dataset, so we had to resort to generating artificial data. For biometrics like fingerprints, faces, and iris scans, there are public generators available. To level the playing field we decided to create a new data generation pipeline for another biometric, and to keep it hidden until the results are announced.
 
 ## Contacts
 This competition is organized by the CYS group of Delft University of Technology.
