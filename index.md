@@ -14,6 +14,7 @@ The primary objective is to **maximize** the area-under-curve of the receiver op
 - The server must not be able to learn any information from the input it receives. *In other words, the input to the server must be computationally indistinguishable from any other input.*
 - Each e-nose has a distinct key, with which all its queries are encrypted. *In other words, an e-nose cannot decrypt another e-nose’s images.*
 - Each query has only one interaction: The e-nose queries the server, and the server sends one response.
+- The cryptographic parameters satisfy at least _128 bits of security_ ([see the homomorphic encryption standard](https://homomorphicencryption.org/standard/)).
 
 The server is expected to return a value that the client will interpret as ‘true’ if it is above a certain threshold, and ‘false’ if it is below. To compute the ROC-AUC we will vary this threshold so whether these values lie between 0-1 or any other range is not important.
 
