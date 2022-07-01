@@ -20,9 +20,9 @@ The server is expected to return a value that the client will interpret as ‘tr
 ## Evaluation
 The server will be populated with a database of 1000 people’s odor measurements. During the evaluation, each one of the three e-noses will send 500 queries of _encrypted_ odor measurements and their _supposed_ user id to the server. All solutions will be evaluated on the same data.
 
-## Data
+## Data & baseline
 For this competition, all data is artificially generated to resemble 'human' odors measured using [gas chromatography](https://en.wikipedia.org/wiki/Gas_chromatography). Note that **we do not offer any guarantees about how realistic these samples are**, although we certainly try to.
-> We will add more details about the data that is given to the participants at a later time.
+> We will add the data & a baseline for participants on the 8th of July.
 
 ## Baseline solution
 > We will provide a baseline solution based on PCA and a simple homomorphic circuit.
