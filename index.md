@@ -27,7 +27,7 @@ The final evaluation will take place on a recent-generation vCPU running a singl
 ## Data & baseline solution
 For this competition, all data is artificially generated to resemble 'human' odors measured using [gas chromatography](https://en.wikipedia.org/wiki/Gas_chromatography). Note that **we do not offer any guarantees about how realistic these samples are**, although we certainly try to.
 
-[**The data and baseline solution are now available in the `data_baseline` folder!**](data_baseline)
+[**The data and baseline solution are now available in the `data_baseline` folder!**](https://github.com/jellevos/cyscompetition/tree/gh-pages/data_baseline)
 ### Data
 The data is split into two files. The file called `chromatograms.csv` contains 5000 odor samples of 1000 users (5 per user). The file called `user_ids.csv` denotes the corresponding user IDs in the same order. Note that in the final evaluation, the solution will be evaluated on different files.
 
