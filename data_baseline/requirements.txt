@@ -1,0 +1,4 @@
+Pyfhel
+scikit-learn
+matplotlib
+tqdm
