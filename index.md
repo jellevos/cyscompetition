@@ -52,7 +52,14 @@ At the end of the baseline we compute the ROC-AUC, and the script outputs an ROC
 **12th-16th of December:** Results announced at WIFS.  
 
 ## Submitting
-> We will include details on the submission format and a submission form at a later time.
+**You can now submit your solution!** Due to problems with access rights to our fileserver, please send your submission as an email to [cyscompetition@tudelft.nl](mailto:cyscompetition@tudelft.nl). Please adhere to the following format:
+- **Subject:** Make sure it contains the word submission.
+- Start the email with your team name and your own name (of the contact person).
+- Make sure your code is in a ZIP archive, and that we can build it using `docker build -t <container>`.
+- Include in your email the command we must run to execute your submission, i.e. `docker run <container> [COMMANDS AND ARGUMENTS]`.
+- Make sure that your code somehow outputs the run time of each query and the bandwidth cost.
+- Optionally, include a high-level description of your method (in writing or as a PDF).
+Thank you for taking part in the competition!
 
 ## Frequently-asked questions
 **Why are you targeting odors as a biometric?**  
